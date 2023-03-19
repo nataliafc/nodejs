@@ -8,6 +8,11 @@ module.exports = [
     handler: UserController.listUsers,
   },
   {
+    endpoint: "/users/:id",
+    method: "GET",
+    handler: UserController.listUsersById,
+  },
+  {
     endpoint: "/users",
     method: "POST",
   },
